@@ -9,6 +9,7 @@ $app = new \Slim\Slim([
     'templates.path' => 'app/public/views'
     ]);
 require 'app/public/controllers/BaseController.php';
+require 'app/public/models/BaseModel.php';
 require 'app/public/routes.php';
 require 'config.php';
 

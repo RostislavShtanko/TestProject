@@ -8,6 +8,7 @@ $app->get('/', function() use ($app){
 
 $app->post('/registration', function() use ($app){
 	require 'controllers/RegistrationController.php';
+	require 'models/RegistrationModel.php';
 	$controller = new RegistrationController;
 	$controller -> index($app);
 });

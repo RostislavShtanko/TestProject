@@ -13,6 +13,10 @@ require 'app/public/models/BaseModel.php';
 require 'app/public/routes.php';
 require 'config.php';
 
+if(session_id() == ''){
+    session_start();
+}
+
 $app->run();
 /*$app->get(
     '/',

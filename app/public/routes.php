@@ -12,3 +12,10 @@ $app->post('/registration', function() use ($app){
 	$controller = new RegistrationController;
 	$controller -> index($app);
 });
+
+$app->post('/auth', function() use ($app){
+	require 'controllers/AuthController.php';
+	require 'models/AuthModel.php';
+	$controller = new AuthController;
+	$controller -> index($app);
+});
